@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4c6ef5, #8a2be2);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 48px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Drawer Button */
+.drawer-toggle {
+    margin-left: auto;
+    font-size: 22px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* DRAWER */
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 45, 0.65);
+    backdrop-filter: blur(15px);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+.drawer.open {
+    width: 240px;
+}
+
+.drawer a {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.drawer a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 30px;
+}
+
+/* CONTENT */
+.content {
+    padding: 80px 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(12px);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}

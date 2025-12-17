@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soft Computing Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a, #101820);
+            color: #f0f0f0;
+            text-align: center;
+            padding: 60px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(20, 20, 20, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 198, 184, 0.3);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #00c6b8;
+            margin-bottom: 15px;
+        }
+
+        p,
+        ul,
+        ol {
+            text-align: left;
+            color: #ddd;
+            line-height: 1.6em;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 198, 184, 0.15);
+            text-align: left;
+        }
+
+        pre {
+            background: #111;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        label {
+            font-weight: 600;
+            color: #00c6b8;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin: 10px 0 20px 0;
+            background: #222;
+            color: #fff;
+        }
+
+        button {
+            background: #00c6b8;
+            color: #101010;
+            padding: 12px 25px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 198, 184, 0.4);
+        }
+
+        button:hover {
+            background: #00f0de;
+            transform: translateY(-4px);
+            box-shadow: 0 0 25px rgba(0, 255, 230, 0.6);
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #00c6b8;
+            color: #101010;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 198, 184, 0.4);
+        }
+
+        .btn:hover {
+            background: #00f0de;
+            transform: translateY(-4px);
+            box-shadow: 0 0 25px rgba(0, 255, 230, 0.6);
+        }
+
+        #result {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #eee;
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: #181818;
+            color: #f0f0f0;
+            border: 1px solid #3cc8b4;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        button {
+            background-color: #3cc8b4;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #2aa899;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Soft Computing Web</h1>
+        <p class="desc">Website ini dibuat untuk memahami konsep dasar <strong>Soft Computing</strong>,
+            <strong>Fuzzy Logic</strong>, dan <strong>Genetic Algorithm</strong> secara mudah dan interaktif.
+        </p>
+
+        <div class="menu">
+            <a href="#tugas1" class="btn">Tugas 1 - Konsep Dasar</a>
+            <a href="#tugas2" class="btn">Tugas 2 - Fuzzy Sugeno</a>
+            <a href="#tugas3" class="btn">Tugas 3 - Knapsack (GA)</a>
+            <a href="#tugas4" class="btn">Tugas 4 - TSP</a>
+        </div>
+
+        <!-- TUGAS 1 -->
+        <h2 id="tugas1">Tugas 1: Pengertian Soft Computing, Fuzzy, dan Neural Network</h2>
+        <div class="card">
+            <h3>Soft Computing</h3>
+            <p>Soft Computing adalah pendekatan komputasi yang toleran terhadap ketidakpastian dan kesalahan.
+                Berbeda dengan Hard Computing yang menuntut kepastian mutlak, Soft Computing mencari solusi yang cukup
+                baik.</p>
+            <p>Metode utamanya mencakup Logika Fuzzy, Neural Network, dan Algoritma Genetika.</p>
+        </div>
+
+        <div class="card">
+            <h3>Logika Fuzzy</h3>
+            <p>Logika Fuzzy memungkinkan nilai kebenaran berada di antara 0 dan 1.
+                Dengan ini, komputer dapat meniru cara manusia mengambil keputusan dalam kondisi tidak pasti.</p>
+            <ul>
+                <li>Sistem AC otomatis</li>
+                <li>Sistem rem ABS</li>
+                <li>Kendaraan otonom</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Neural Network</h3>
+            <p>Neural Network adalah sistem komputasi terinspirasi dari otak manusia,
+                terdiri dari neuron buatan yang saling terhubung dan dapat belajar dari data.</p>
+            <ul>
+                <li>Pengenalan wajah & suara</li>
+                <li>Self-driving car</li>
+                <li>Chatbot cerdas seperti ChatGPT</li>
+            </ul>
+        </div>
+
+        <!-- TUGAS 2 -->
+        <h2 id="tugas2">Tugas 2 — Studi Kasus Fuzzy Sugeno</h2>
+        <div class="card">
+            <p>Kasus: <strong>Penentuan Tingkat Kepedasan Mie</strong> berdasarkan dua input —
+                <em>Jumlah Cabai</em> (0–20) dan <em>Level Sambal</em> (0–10). Output: <strong>Tingkat
+                    Kepedasan</strong> (0–100).
+            </p>
+
+            <form action="/hitung_fuzzy" method="POST">
+                <label>Jumlah Cabai (0 - 20)</label><br>
+                <input type="number" name="cabai" min="0" max="20" required><br>
+
+                <label>Level Sambal (0 - 10)</label><br>
+                <input type="number" name="sambal" min="0" max="10" required><br>
+
+                <button type="submit">Hitung Kepedasan</button>
+            </form>
+
+            {% if hasil %}
+            <div class="card">
+                <h4>Hasil Perhitungan</h4>
+                <p><strong>Tingkat Kepedasan = {{ hasil }}</strong></p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- TUGAS 3 -->
+        <h2 id="tugas3">Tugas 3 — Genetic Algorithm: Knapsack Problem</h2>
+        <div class="card">
+            <p>
+                Masalah <em>Knapsack</em> adalah persoalan optimasi untuk memilih kombinasi barang agar
+                <strong>nilai total maksimum</strong> dapat dicapai tanpa melebihi batas kapasitas tas.
+                Algoritma Genetika (GA) digunakan untuk mencari solusi terbaik dengan konsep evolusi populasi.
+            </p>
+
+            <form id="gaForm">
+                <label>Populasi:</label>
+                <input type="number" name="pop_size" value="8" required>
+
+                <label>Generasi:</label>
+                <input type="number" name="generations" value="8" required>
+
+                <label>Crossover Rate:</label>
+                <input type="number" step="0.1" name="crossover_rate" value="0.8" required>
+
+                <label>Mutation Rate:</label>
+                <input type="number" step="0.1" name="mutation_rate" value="0.1" required>
+
+                <button type="submit">Jalankan Algoritma</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+
+        <!-- ===================== TUGAS 4 — TSP BRUTE FORCE ===================== -->
+        <h2 id="tugas4">Tugas 4 — TSP Brute Force</h2>
+
+        <div class="card">
+            <form id="tspForm" enctype="multipart/form-data">
+                <label>Upload File Excel Matrix Jarak</label>
+                <input type="file" name="file" required>
+                <button type="submit">Hitung TSP</button>
+            </form>
+
+            <div id="tspResult"></div>
+
+            <script>
+                document.getElementById("tspForm").onsubmit = async function (e) {
+                    e.preventDefault();
+
+                    let formData = new FormData(this);
+
+                    let res = await fetch("/tsp", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    let data = await res.json();
+
+                    if (data.error) {
+                        document.getElementById("tspResult").innerHTML =
+                            "<p style='color:red'>" + data.error + "</p>";
+                    } else {
+                        document.getElementById("tspResult").innerHTML = `
+            <h4>Rute Terbaik:</h4>
+            <p>${data.route.join(" → ")}</p>
+            <h4>Total Jarak:</h4>
+            <p>${data.distance}</p>
+        `;
+                    }
+                };
+            </script>
+
+
+
+            <footer>© 2025 - Soft Computing | Dibuat untuk Pembelajaran</footer>
+        </div>
+
+        <script>
+            // Smooth scroll antar tugas
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href'))
+                        .scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Script Genetic Algorithm (Knapsack)
+            const form = document.getElementById("gaForm");
+            const resultDiv = document.getElementById("result");
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                resultDiv.innerHTML = "<p>Menjalankan algoritma...</p>";
+
+                const formData = Object.fromEntries(new FormData(form));
+
+                const response = await fetch("/run", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                let html = `<h3>Hasil Akhir</h3>
+    <p><b>Kromosom Terbaik:</b> ${data.best_chromosome}</p>
+    <p><b>Item Terpilih:</b> ${data.best_items.join(", ")}</p>
+    <p><b>Total Berat:</b> ${data.total_weight}</p>
+    <p><b>Total Nilai:</b> ${data.total_value}</p>
+    <p><b>Fitness Akhir:</b> ${data.fitness}</p>
+    <hr>
+    <h4>Log Per Generasi</h4>
+    <pre>${JSON.stringify(data.logs, null, 2)}</pre>`;
+
+                resultDiv.innerHTML = html;
+            });
+        </script>
+
+</body>
+
+</html>
